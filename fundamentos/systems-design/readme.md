@@ -9,30 +9,32 @@ Puedes navegar usando el índice para ir a la sección que más te interese.
 
 ## 📌 Índice de Preguntas
 
-1. [¿Qué es el diseño de sistemas?](#1)
-2. [¿Qué pasos sigues para diseñar un sistema desde cero?](#2)
-3. [¿Qué es la escalabilidad horizontal vs. vertical?](#3)
-4. [¿Qué es la tolerancia a fallos?](#4)
-5. [¿Qué es un balanceador de carga?](#5)
-6. [¿Qué es un CDN y para qué se usa?](#6)
-7. [¿Qué es una base de datos relacional vs. no relacional?](#7)
-8. [¿Qué es la partición o "sharding"?](#8)
-9. [¿Qué es la caché y cómo mejora el rendimiento?](#9)
-10. [¿Qué es CAP Theorem?](#10)
-11. [¿Qué es una cola de mensajes y por qué es útil?](#11)
-12. [¿Qué métricas considerarías para evaluar el rendimiento de un sistema?](#12)
-13. [¿Cómo diseñarías un sistema tipo URL Shortener como bit.ly?](#13)
-14. [¿Cómo diseñarías un sistema de chat en tiempo real?](#14)
-15. [¿Cómo garantizarías alta disponibilidad en un sistema?](#15)
+1. ¿Qué es el diseño de sistemas?
+2. ¿Qué pasos sigues para diseñar un sistema desde cero?
+3. ¿Qué es la escalabilidad horizontal vs. vertical?
+4. ¿Qué es la tolerancia a fallos?
+5. ¿Qué es un balanceador de carga?
+6. ¿Qué es un CDN y para qué se usa?
+7. ¿Qué es una base de datos relacional vs. no relacional?
+8. ¿Qué es la partición o "sharding"?
+9. ¿Qué es la caché y cómo mejora el rendimiento?
+10. ¿Qué es CAP Theorem?
+11. ¿Qué es una cola de mensajes y por qué es útil?
+12. ¿Qué métricas considerarías para evaluar el rendimiento de un sistema?
+13. ¿Cómo diseñarías un sistema tipo URL Shortener como bit.ly?
+14. ¿Cómo diseñarías un sistema de chat en tiempo real?
+15. ¿Cómo garantizarías alta disponibilidad en un sistema?
 
 ---
 
-## 1. ¿Qué es el diseño de sistemas? <a name="1"></a>
+## 1. ¿Qué es el diseño de sistemas?
+
 Es el proceso de definir la arquitectura, componentes y datos de un sistema de software. Se enfoca en cómo los distintos módulos interactúan y escalan.
 
 ---
 
-## 2. ¿Qué pasos sigues para diseñar un sistema desde cero? <a name="2"></a>
+## 2. ¿Qué pasos sigues para diseñar un sistema desde cero?
+
 1. Requisitos funcionales y no funcionales.
 2. Estimación de tráfico y carga.
 3. Diseño de alto nivel (componentes principales).
@@ -43,7 +45,8 @@ Es el proceso de definir la arquitectura, componentes y datos de un sistema de s
 
 ---
 
-## 3. ¿Qué es la escalabilidad horizontal vs. vertical? <a name="3"></a>
+## 3. ¿Qué es la escalabilidad horizontal vs. vertical?
+
 - **Horizontal**: Añadir más máquinas.
 - **Vertical**: Añadir más recursos a una sola máquina.
 
@@ -51,22 +54,26 @@ Es el proceso de definir la arquitectura, componentes y datos de un sistema de s
 
 ---
 
-## 4. ¿Qué es la tolerancia a fallos? <a name="4"></a>
+## 4. ¿Qué es la tolerancia a fallos?
+
 Es la capacidad de un sistema de seguir funcionando incluso si una parte falla. Se logra con redundancia, replicación y manejo de errores.
 
 ---
 
-## 5. ¿Qué es un balanceador de carga? <a name="5"></a>
+## 5. ¿Qué es un balanceador de carga?
+
 Es un componente que distribuye el tráfico entre múltiples servidores para evitar sobrecarga y mejorar disponibilidad.
 
 ---
 
-## 6. ¿Qué es un CDN y para qué se usa? <a name="6"></a>
+## 6. ¿Qué es un CDN y para qué se usa?
+
 Un **CDN (Content Delivery Network)** es una red de servidores distribuidos que entregan contenido estático (imágenes, videos, archivos) desde ubicaciones cercanas al usuario para mejorar la velocidad.
 
 ---
 
-## 7. ¿Qué es una base de datos relacional vs. no relacional? <a name="7"></a>
+## 7. ¿Qué es una base de datos relacional vs. no relacional?
+
 | Tipo | Ejemplos | Características |
 |------|----------|-----------------|
 | Relacional | MySQL, PostgreSQL | Basadas en tablas, SQL |
@@ -74,19 +81,22 @@ Un **CDN (Content Delivery Network)** es una red de servidores distribuidos que 
 
 ---
 
-## 8. ¿Qué es la partición o "sharding"? <a name="8"></a>
+## 8. ¿Qué es la partición o "sharding"?
+
 Es dividir una base de datos grande en partes más pequeñas llamadas "shards", distribuidas en distintos servidores para mejorar rendimiento y escalabilidad.
 
 ---
 
-## 9. ¿Qué es la caché y cómo mejora el rendimiento? <a name="9"></a>
+## 9. ¿Qué es la caché y cómo mejora el rendimiento?
+
 La caché almacena datos en memoria para evitar accesos repetidos a bases de datos. Mejora la latencia y reduce la carga del sistema.
 
 Ejemplo: Redis, Memcached.
 
 ---
 
-## 10. ¿Qué es CAP Theorem? <a name="10"></a>
+## 10. ¿Qué es CAP Theorem?
+
 Postula que en un sistema distribuido solo se pueden garantizar **dos de tres** propiedades al mismo tiempo:
 
 - **C**onsistency (consistencia)
@@ -95,14 +105,16 @@ Postula que en un sistema distribuido solo se pueden garantizar **dos de tres** 
 
 ---
 
-## 11. ¿Qué es una cola de mensajes y por qué es útil? <a name="11"></a>
+## 11. ¿Qué es una cola de mensajes y por qué es útil?
+
 Es un sistema que permite comunicación asíncrona entre servicios. Se usa para desacoplar componentes y manejar picos de tráfico.
 
 Ejemplo: RabbitMQ, Kafka, AWS SQS.
 
 ---
 
-## 12. ¿Qué métricas considerarías para evaluar el rendimiento de un sistema? <a name="12"></a>
+## 12. ¿Qué métricas considerarías para evaluar el rendimiento de un sistema?
+
 - Latencia
 - Throughput
 - Tasa de errores
@@ -112,7 +124,8 @@ Ejemplo: RabbitMQ, Kafka, AWS SQS.
 
 ---
 
-## 13. ¿Cómo diseñarías un sistema tipo URL Shortener como bit.ly? <a name="13"></a>
+## 13. ¿Cómo diseñarías un sistema tipo URL Shortener como bit.ly?
+
 - Endpoint para generar la URL corta.
 - Base de datos para mapear `<shortCode>` → `<originalURL>`.
 - Algoritmo de hash o generador incremental.
@@ -121,7 +134,8 @@ Ejemplo: RabbitMQ, Kafka, AWS SQS.
 
 ---
 
-## 14. ¿Cómo diseñarías un sistema de chat en tiempo real? <a name="14"></a>
+## 14. ¿Cómo diseñarías un sistema de chat en tiempo real?
+
 - WebSockets para comunicación bidireccional.
 - Cola de mensajes para persistencia.
 - Base de datos para historial.
@@ -129,7 +143,8 @@ Ejemplo: RabbitMQ, Kafka, AWS SQS.
 
 ---
 
-## 15. ¿Cómo garantizarías alta disponibilidad en un sistema? <a name="15"></a>
+## 15. ¿Cómo garantizarías alta disponibilidad en un sistema?
+
 - Clusters de servidores redundantes.
 - Balanceadores de carga.
 - Réplicas de bases de datos.
@@ -151,4 +166,4 @@ Ejemplo: RabbitMQ, Kafka, AWS SQS.
 
 ---
 
-<p align="center">Hecho con 🧠 por <a href="https://holasoymalva.com">@holasoymalva</a></p>
+Hecho con 🧠 por [@holasoymalva](https://holasoymalva.com)

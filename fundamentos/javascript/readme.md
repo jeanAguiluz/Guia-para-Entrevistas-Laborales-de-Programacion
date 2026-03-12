@@ -8,6 +8,7 @@ Puedes desplazarte hasta la sección correspondiente haciendo clic en el índice
 ---
 
 ## 📌 **Índice**
+
 - [Preguntas y Respuestas](#-preguntas-y-respuestas)
   1. [🔹 ¿Cuáles son los distintos tipos de datos en JavaScript?](#-cuáles-son-los-distintos-tipos-de-datos-en-javascript)
   2. [🔹 ¿Cuál es la diferencia entre los operadores `==` y `===`?](#-cuál-es-la-diferencia-entre-los-operadores--y-)
@@ -41,6 +42,7 @@ Puedes desplazarte hasta la sección correspondiente haciendo clic en el índice
 ## 📌 Preguntas y Respuestas
 
 ### 🔹 ¿Cuáles son los distintos tipos de datos en JavaScript?
+
 JavaScript tiene **7 tipos de datos primitivos** y tipos estructurales:
 
 | Tipo | Ejemplo |
@@ -58,6 +60,7 @@ También existen tipos estructurales como **Objects, Arrays y Functions**.
 ---
 
 ### 🔹 ¿Cuál es la diferencia entre los operadores `==` y `===`?
+
 | Operador | Comparación | Ejemplo | Resultado |
 |----------|------------|---------|----------|
 | `==` | Compara valores, permite conversión de tipos (coerción) | `5 == "5"` | `true` |
@@ -72,6 +75,7 @@ console.log(0 === false); // false (sin coerción)
 ---
 
 ### 🔹 ¿Qué es la coerción implícita de tipos en JavaScript?
+
 Es cuando JavaScript convierte automáticamente un tipo de dato en otro.
 
 🔹 **Ejemplo de coerción:**
@@ -83,6 +87,7 @@ console.log("5" - 3); // 2 (String se convierte en Number)
 ---
 
 ### 🔹 ¿Es JavaScript un lenguaje de tipo estático o dinámico?
+
 JavaScript es **dinámico**, lo que significa que las variables pueden cambiar de tipo en tiempo de ejecución.
 
 ```js
@@ -93,6 +98,7 @@ x = 10;         // Ahora es Number
 ---
 
 ### 🔹 ¿Qué es la propiedad `NaN` en JavaScript?
+
 `NaN` (Not a Number) representa un valor que no es un número válido.
 
 🔹 **Ejemplo:**
@@ -105,6 +111,7 @@ console.log(isNaN("abc")); // true
 ---
 
 ### 🔹 ¿Qué es el paso por valor y el paso por referencia?
+
 | Modo | Tipos de datos | ¿Se modifica el original? |
 |------|---------------|--------------------------|
 | **Paso por valor** | Primitivos (`String`, `Number`, etc.) | ❌ No |
@@ -126,6 +133,7 @@ console.log(obj1.name); // "Pedro"
 ---
 
 ### 🔹 ¿Qué son las funciones de orden superior en JavaScript?
+
 Son funciones que **reciben o retornan otra función**.
 
 🔹 **Ejemplo:**
@@ -141,6 +149,7 @@ console.log(operacion(5, 3, suma)); // 8
 ---
 
 ### 🔹 Explica los métodos `call()`, `apply()` y `bind()`
+
 Son métodos para cambiar el contexto de `this` en funciones.
 
 | Método | Uso | Diferencia |
@@ -161,6 +170,7 @@ saludar.call(persona); // "Hola Carlos"
 ---
 
 ### 🔹 ¿Qué es Currying en JavaScript?
+
 Currying es una técnica donde una función recibe **uno a uno sus argumentos** en lugar de todos a la vez.
 
 🔹 **Ejemplo:**
@@ -172,6 +182,7 @@ console.log(suma(3)(5)); // 8
 ---
 
 ### 🔹 ¿Qué son las Closures en JavaScript?
+
 Una **Closure** es una función que mantiene acceso a las variables de su contexto incluso después de ejecutarse.
 
 🔹 **Ejemplo:**
@@ -188,6 +199,7 @@ console.log(increment()); // 2
 ---
 
 ### 🔹 Diferencias entre `var`, `let` y `const`
+
 | Declaración | Ámbito | Hoisting | Reasignable |
 |------------|--------|---------|------------|
 | `var` | Función | Sí, como `undefined` | Sí |
@@ -197,6 +209,7 @@ console.log(increment()); // 2
 ---
 
 ### 🔹 ¿Para qué sirven las promesas en JavaScript?
+
 Las **promesas** manejan operaciones asíncronas y evitan el "callback hell".
 
 🔹 **Ejemplo:**
@@ -208,6 +221,7 @@ promesa.then(console.log);
 ---
 
 ### 🔹 ¿Qué son las clases en JavaScript?
+
 Las clases son una forma de definir objetos en JavaScript usando `class`.
 
 🔹 **Ejemplo:**
@@ -227,6 +241,7 @@ console.log(juan.saludar());
 ---
 
 ### 🔹 ¿Qué es la desconstrucción de objetos?
+
 Es una forma de extraer valores de objetos o arrays.
 
 🔹 **Ejemplo:**
@@ -237,6 +252,7 @@ console.log(nombre, edad); // "Ana 25"
 ```
 
 ### 🔹 ¿Qué son las funciones generadoras?
+
 Las **funciones generadoras** (`function*`) son un tipo especial de función en JavaScript que puede **pausar** y **reanudar** su ejecución. Esto las hace útiles cuando queremos manejar iteraciones de una manera más eficiente.
 
 En lugar de ejecutar todo el código de una vez, una función generadora devuelve valores **uno por uno** usando `yield`. Cuando la función se pausa con `yield`, recuerda su estado hasta que la volvamos a llamar con `next()`.
@@ -261,6 +277,7 @@ Se usan para **iteraciones personalizadas**, manejar **datos en streaming** y ev
 ---
 
 ### 🔹 Explique el alcance y la cadena de alcance en JavaScript.
+
 El **alcance (scope)** en JavaScript determina **dónde** una variable puede ser accedida. La **cadena de alcance (scope chain)** permite a una función acceder a variables de su contexto externo.
 
 🔹 **Tipos de Scope en JavaScript:**
@@ -290,6 +307,7 @@ externa();
 ---
 
 ### 🔹 ¿Qué son las devoluciones de llamada (Callbacks) en JavaScript?
+
 Un **callback** es una función que se pasa como argumento a otra función y se ejecuta después de que la tarea principal ha terminado. Se usa mucho en operaciones **asíncronas**, como trabajar con datos de una API o temporizadores.
 
 🔹 **Ejemplo de un Callback básico:**
@@ -308,6 +326,7 @@ procesar(5, (resultado) => {
 ---
 
 ### 🔹 ¿Cuál es la diferencia entre declaración de función y expresión de función?
+
 En JavaScript hay dos formas principales de definir funciones:  
 
 | Tipo | Ejemplo | ¿Soporta Hoisting? |
@@ -333,6 +352,7 @@ const saludar = function() {
 ---
 
 ### 🔹 ¿Qué son las importaciones y exportaciones en JavaScript?
+
 JavaScript permite dividir código en **módulos**, donde un archivo puede exportar funciones y otro importarlas.
 
 🔹 **Ejemplo de Exportación (archivo `math.js`):**
@@ -354,6 +374,7 @@ console.log(multiplica(3, 4)); // 12
 ---
 
 ### 🔹 Explica ¿Qué es DOM y cómo funciona?
+
 El **DOM (Document Object Model)** es la representación de una página web en forma de árbol de objetos. Nos permite modificar contenido HTML con JavaScript.
 
 🔹 **Ejemplo de manipulación del DOM:**
@@ -366,6 +387,7 @@ document.querySelector(".btn").addEventListener("click", () => alert("¡Hola!"))
 ---
 
 ### 🔹 ¿Qué es el parámetro rest y el operador spread?
+
 | Operador | Uso | Ejemplo |
 |----------|-----|---------|
 | **`rest` (`...`)** | Agrupa múltiples argumentos en un array | `function suma(...nums) {}` |
@@ -390,6 +412,7 @@ console.log(nuevoArr); // [1, 2, 3, 4, 5]
 ---
 
 ### 🔹 ¿Cuál es la diferencia entre `Undefined`, `Undeclared` y `Null` en JavaScript?
+
 | Estado | Significado | Ejemplo |
 |--------|------------|---------|
 | **Undefined** | Variable declarada pero sin valor asignado | `let x; console.log(x); // undefined` |
@@ -412,6 +435,7 @@ console.log(c); // null
 ---
 
 ## 📚 **Recursos Adicionales**
+
 📖 **Documentación Oficial**:  
 - [MDN JavaScript Docs](https://developer.mozilla.org/es/docs/Web/JavaScript)  
 - [JavaScript.info](https://javascript.info/)  

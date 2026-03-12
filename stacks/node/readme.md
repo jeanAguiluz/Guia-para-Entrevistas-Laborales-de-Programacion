@@ -34,32 +34,6 @@ Puedes desplazarte hasta la sección correspondiente haciendo clic en el índice
 
 ## 📌 Preguntas y Respuestas
 
-(En esta respuesta no pongo todas porque es muy largo, pero si quieres te armo el documento completo ahora mismo).
-
-**Ejemplo de cómo irían redactadas**:
-
----
-
-### 🔹 ¿Cómo funciona el Event Loop en Node.js?
-
-El Event Loop permite a Node.js manejar operaciones asincrónicas sin bloquear el hilo principal. Usa una **cola de eventos** y fases específicas (timers, I/O callbacks, poll, check, close callbacks).
-
-```js
-setTimeout(() => console.log("Timer"), 0);
-setImmediate(() => console.log("Immediate"));
-process.nextTick(() => console.log("Next Tick"));
-```
-
-Salida probable:
-```
-Next Tick
-Timer
-Immediate
-```
-
-💡 **Importante**: `process.nextTick` siempre se ejecuta antes que `setTimeout` y `setImmediate`.
-
----
 ### 🔹 ¿Cómo funciona el Event Loop en Node.js?
 
 El Event Loop permite a Node.js manejar múltiples operaciones asincrónicas en un solo hilo. Está compuesto por varias fases (timers, I/O callbacks, idle, poll, check y close callbacks).

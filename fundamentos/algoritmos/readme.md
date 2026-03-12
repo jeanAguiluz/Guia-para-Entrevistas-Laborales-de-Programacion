@@ -9,50 +9,54 @@ Puedes navegar usando el índice para ir a las secciones que más te interesen.
 
 ## 📌 Índice
 
-### Estructuras de Datos
-1. [¿Qué es una estructura de datos?](#1)
-2. [¿Qué es un array y cómo funciona?](#2)
-3. [¿Qué es una pila (stack)?](#3)
-4. [¿Qué es una cola (queue)?](#4)
-5. [¿Qué es una lista enlazada (linked list)?](#5)
-6. [¿Qué es una tabla hash?](#6)
-7. [¿Qué es un árbol binario?](#7)
-8. [¿Qué es un heap?](#8)
-9. [¿Qué es un grafo?](#9)
+### Temario de Estructuras de Datos
 
-### Algoritmos
-10. [¿Qué es un algoritmo?](#10)
-11. [¿Qué es la notación Big O y por qué es importante?](#11)
-12. [¿Qué es la recursión?](#12)
-13. [¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?](#13)
-14. [¿Qué es ordenamiento por burbuja (bubble sort)?](#14)
-15. [¿Qué es quicksort y cómo funciona?](#15)
-16. [¿Qué es el algoritmo de Dijkstra?](#16)
-17. [¿Qué es el algoritmo de backtracking?](#17)
-18. [¿Qué es programación dinámica?](#18)
-19. [¿Qué es una búsqueda en anchura (BFS)?](#19)
-20. [¿Qué es una búsqueda en profundidad (DFS)?](#20)
+1. ¿Qué es una estructura de datos?
+2. ¿Qué es un array y cómo funciona?
+3. ¿Qué es una pila (stack)?
+4. ¿Qué es una cola (queue)?
+5. ¿Qué es una lista enlazada (linked list)?
+6. ¿Qué es una tabla hash?
+7. ¿Qué es un árbol binario?
+8. ¿Qué es un heap?
+9. ¿Qué es un grafo?
+
+### Temario de Algoritmos
+
+1 ¿Qué es un algoritmo?
+2. ¿Qué es la notación Big O y por qué es importante?
+3. ¿Qué es la recursión?
+4. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?
+5. ¿Qué es ordenamiento por burbuja (bubble sort)?
+6. ¿Qué es quicksort y cómo funciona?
+7. ¿Qué es el algoritmo de Dijkstra?
+8. ¿Qué es el algoritmo de backtracking?
+9. ¿Qué es programación dinámica?
+10. ¿Qué es una búsqueda en anchura (BFS)?
+11. ¿Qué es una búsqueda en profundidad (DFS)?
 
 ---
 
 ## Estructuras de Datos
 
-### 1. ¿Qué es una estructura de datos? <a name="1"></a>
+### 1. ¿Qué es una estructura de datos?
+
 Es una forma de organizar y almacenar datos para que puedan ser usados de forma eficiente. Ejemplos: arrays, listas, árboles, grafos.
 
 ---
 
-### 2. ¿Qué es un array y cómo funciona? <a name="2"></a>
+### 2. ¿Qué es un array y cómo funciona?
+
 Es una colección de elementos almacenados en posiciones contiguas de memoria. Permite acceso directo mediante índices.
 
 ```js
 const arr = [10, 20, 30];
 console.log(arr[1]); // 20
-````
+```
 
 ---
 
-### 3. ¿Qué es una pila (stack)? <a name="3"></a>
+### 3. ¿Qué es una pila (stack)?
 
 Es una estructura LIFO (Last In, First Out). El último en entrar es el primero en salir.
 
@@ -65,7 +69,7 @@ console.log(stack.pop()); // 2
 
 ---
 
-### 4. ¿Qué es una cola (queue)? <a name="4"></a>
+### 4. ¿Qué es una cola (queue)?
 
 Es una estructura FIFO (First In, First Out). El primero en entrar es el primero en salir.
 
@@ -78,7 +82,7 @@ console.log(queue.shift()); // 1
 
 ---
 
-### 5. ¿Qué es una lista enlazada (linked list)? <a name="5"></a>
+### 5. ¿Qué es una lista enlazada (linked list)?
 
 Es una colección de nodos donde cada nodo apunta al siguiente. Ideal para inserciones/eliminaciones frecuentes.
 
@@ -93,7 +97,7 @@ class Node {
 
 ---
 
-### 6. ¿Qué es una tabla hash? <a name="6"></a>
+### 6. ¿Qué es una tabla hash?
 
 Permite almacenar pares clave-valor con acceso rápido. Usa funciones hash para indexar.
 
@@ -105,19 +109,19 @@ console.log(mapa.get("clave")); // "valor"
 
 ---
 
-### 7. ¿Qué es un árbol binario? <a name="7"></a>
+### 7. ¿Qué es un árbol binario?
 
 Estructura jerárquica donde cada nodo tiene como máximo dos hijos. Base para árboles de búsqueda, heaps, etc.
 
 ---
 
-### 8. ¿Qué es un heap? <a name="8"></a>
+### 8. ¿Qué es un heap?
 
 Es un árbol binario completo que mantiene una propiedad específica: en un **max heap**, cada padre ≥ hijos.
 
 ---
 
-### 9. ¿Qué es un grafo? <a name="9"></a>
+### 9. ¿Qué es un grafo?
 
 Conjunto de nodos conectados por aristas. Puede ser dirigido o no, ponderado o no.
 
@@ -125,13 +129,13 @@ Conjunto de nodos conectados por aristas. Puede ser dirigido o no, ponderado o n
 
 ## Algoritmos
 
-### 10. ¿Qué es un algoritmo? <a name="10"></a>
+### 10. ¿Qué es un algoritmo?
 
 Es una secuencia de pasos definidos para resolver un problema. Debe ser claro, finito y ejecutable.
 
 ---
 
-### 11. ¿Qué es la notación Big O y por qué es importante? <a name="11"></a>
+### 11. ¿Qué es la notación Big O y por qué es importante?
 
 Describe la complejidad temporal o espacial de un algoritmo en función del tamaño de entrada.
 
@@ -144,7 +148,7 @@ Describe la complejidad temporal o espacial de un algoritmo en función del tama
 
 ---
 
-### 12. ¿Qué es la recursión? <a name="12"></a>
+### 12. ¿Qué es la recursión?
 
 Es cuando una función se llama a sí misma para resolver subproblemas.
 
@@ -157,14 +161,14 @@ function factorial(n) {
 
 ---
 
-### 13. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria? <a name="13"></a>
+### 13. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?
 
 * **Lineal**: Recorre uno a uno los elementos (O(n)).
 * **Binaria**: Divide el array ordenado a la mitad en cada paso (O(log n)).
 
 ---
 
-### 14. ¿Qué es ordenamiento por burbuja (bubble sort)? <a name="14"></a>
+### 14. ¿Qué es ordenamiento por burbuja (bubble sort)?
 
 Algoritmo simple que compara e intercambia elementos adyacentes repetidamente.
 
@@ -180,37 +184,37 @@ function bubbleSort(arr) {
 
 ---
 
-### 15. ¿Qué es quicksort y cómo funciona? <a name="15"></a>
+### 15. ¿Qué es quicksort y cómo funciona?
 
 Algoritmo de ordenamiento basado en "divide y vencerás". Usa un pivote y separa elementos menores y mayores.
 
 ---
 
-### 16. ¿Qué es el algoritmo de Dijkstra? <a name="16"></a>
+### 16. ¿Qué es el algoritmo de Dijkstra?
 
 Calcula el camino más corto desde un nodo a todos los demás en un grafo ponderado sin ciclos negativos.
 
 ---
 
-### 17. ¿Qué es el algoritmo de backtracking? <a name="17"></a>
+### 17. ¿Qué es el algoritmo de backtracking?
 
 Prueba soluciones recursivamente y retrocede si no cumplen. Ejemplo: Sudoku, n-reinas.
 
 ---
 
-### 18. ¿Qué es programación dinámica? <a name="18"></a>
+### 18. ¿Qué es programación dinámica?
 
 Técnica que guarda resultados de subproblemas para no repetir cálculos. Ejemplo: Fibonacci con memoización.
 
 ---
 
-### 19. ¿Qué es una búsqueda en anchura (BFS)? <a name="19"></a>
+### 19. ¿Qué es una búsqueda en anchura (BFS)?
 
 Explora los nodos nivel por nivel. Se implementa con una cola.
 
 ---
 
-### 20. ¿Qué es una búsqueda en profundidad (DFS)? <a name="20"></a>
+### 20. ¿Qué es una búsqueda en profundidad (DFS)?
 
 Explora lo más profundo posible antes de retroceder. Se implementa con una pila o recursión.
 
@@ -231,4 +235,4 @@ Explora lo más profundo posible antes de retroceder. Se implementa con una pila
 
 ---
 
-<p align="center">Hecho con 🧠 por <a href="https://holasoymalva.com">@holasoymalva</a></p>
+Hecho con 🧠 por [@holasoymalva](https://holasoymalva.com)

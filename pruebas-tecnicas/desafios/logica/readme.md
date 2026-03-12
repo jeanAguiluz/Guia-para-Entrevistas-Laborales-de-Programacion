@@ -17,29 +17,29 @@ Bienvenido a la sección de **Pruebas Técnicas** enfocada en resolver problemas
 
 ## 📌 Índice de Desafíos
 
-1. [✅ Subcadena más larga sin caracteres repetidos](#1)
-2. [✅ FizzBuzz con condiciones personalizadas](#2)
-3. [✅ Verificar si una cadena es palíndromo](#3)
-4. [✅ Determinar si dos strings son anagramas](#4)
-5. [✅ Encontrar el número que se repite una sola vez](#5)
-6. [✅ Validar paréntesis balanceados](#6)
-7. [✅ Búsqueda binaria en array ordenado](#7)
-8. [✅ Factorial recursivo vs iterativo](#8)
+1. ✅ Subcadena más larga sin caracteres repetidos
+2. ✅ FizzBuzz con condiciones personalizadas
+3. ✅ Verificar si una cadena es palíndromo
+4. ✅ Determinar si dos strings son anagramas
+5. ✅ Encontrar el número que se repite una sola vez
+6. ✅ Validar paréntesis balanceados
+7. ✅ Búsqueda binaria en array ordenado
+8. ✅ Factorial recursivo vs iterativo
 
 ---
 
-## 1. Subcadena más larga sin caracteres repetidos <a name="1"></a>
+## 1. Subcadena más larga sin caracteres repetidos
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 Dado un string, encuentra la longitud de la subcadena más larga que no contiene caracteres repetidos.
 
 **Ejemplo**:
 ```js
 Entrada: "abcabcbb"
 Salida: 3 // "abc"
-````
+```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Usa un puntero izquierdo y derecho para delimitar la ventana.
 2. Utiliza un `Set` para registrar caracteres únicos en la ventana.
@@ -48,9 +48,9 @@ Salida: 3 // "abc"
 
 ---
 
-## 2. FizzBuzz con condiciones personalizadas <a name="2"></a>
+## 2. FizzBuzz con condiciones personalizadas
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Imprime los números del 1 al 100. Para múltiplos de 3, imprime "Fizz", para múltiplos de 5 "Buzz", y para ambos "FizzBuzz".
 
@@ -60,7 +60,7 @@ Imprime los números del 1 al 100. Para múltiplos de 3, imprime "Fizz", para m�
 1, 2, Fizz, 4, Buzz, Fizz, 7, ...
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Usa un bucle de 1 a 100.
 2. Condicionales:
@@ -72,9 +72,9 @@ Imprime los números del 1 al 100. Para múltiplos de 3, imprime "Fizz", para m�
 
 ---
 
-## 3. Verificar si una cadena es palíndromo <a name="3"></a>
+## 3. Verificar si una cadena es palíndromo
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Escribe una función que determine si una palabra o frase es un palíndromo (se lee igual al derecho que al revés).
 
@@ -85,16 +85,16 @@ Entrada: "anita lava la tina"
 Salida: true
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Elimina espacios y convierte a minúsculas.
 2. Compara la cadena con su reversa.
 
 ---
 
-## 4. Determinar si dos strings son anagramas <a name="4"></a>
+## 4. Determinar si dos strings son anagramas
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Dado dos strings, determinar si son anagramas (mismos caracteres, diferente orden).
 
@@ -105,16 +105,16 @@ Entrada: "listen", "silent"
 Salida: true
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Quita espacios y ordena ambas cadenas.
 2. Compara si son idénticas.
 
 ---
 
-## 5. Encontrar el número que se repite una sola vez <a name="5"></a>
+## 5. Encontrar el número que se repite una sola vez
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Dado un array donde todos los elementos se repiten dos veces excepto uno, encuentra ese número.
 
@@ -125,16 +125,16 @@ Entrada: [4, 1, 2, 1, 2]
 Salida: 4
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Usa XOR (`^`) para cancelar duplicados.
 2. Resultado final será el número único.
 
 ---
 
-## 6. Validar paréntesis balanceados <a name="6"></a>
+## 6. Validar paréntesis balanceados
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Verifica si una cadena de paréntesis está correctamente balanceada.
 
@@ -145,7 +145,7 @@ Entrada: "({[]})"
 Salida: true
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Usa una pila.
 2. Por cada apertura, apila.
@@ -153,9 +153,9 @@ Salida: true
 
 ---
 
-## 7. Búsqueda binaria en array ordenado <a name="7"></a>
+## 7. Búsqueda binaria en array ordenado
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Dado un array ordenado y un número objetivo, devuelve su índice o -1 si no existe.
 
@@ -166,7 +166,7 @@ Entrada: [1, 3, 5, 7, 9], objetivo: 5
 Salida: 2
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 1. Usa punteros `inicio` y `fin`.
 2. Calcula punto medio.
@@ -174,9 +174,9 @@ Salida: 2
 
 ---
 
-## 8. Factorial recursivo vs iterativo <a name="8"></a>
+## 8. Factorial recursivo vs iterativo
 
-### 🔹 Enunciado
+**🔹 Enunciado**
 
 Implementa una función que calcule el factorial de un número de forma:
 
@@ -190,7 +190,7 @@ Entrada: 5
 Salida: 120
 ```
 
-### 🔹 Explicación paso a paso
+**🔹 Explicación paso a paso**
 
 * Recursivo: `n * factorial(n - 1)`
 * Iterativo: usar bucle acumulativo
@@ -226,4 +226,4 @@ Salida: 120
 
 ---
 
-<p align="center">Hecho con 💻 por <a href="https://holasoymalva.com">@holasoymalva</a></p>
+Hecho con 💻 por [@holasoymalva](https://holasoymalva.com)

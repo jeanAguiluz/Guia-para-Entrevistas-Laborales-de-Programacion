@@ -10,11 +10,11 @@ Esta sección contiene **desafíos prácticos** de nivel intermedio-avanzado cen
 
 ## 📌 Índice de Desafíos
 
-1. [📦 Diseñar un sistema tipo Dropbox (Almacenamiento de Archivos Distribuido)](#1)
+1. 📦 Diseñar un sistema tipo Dropbox (Almacenamiento de Archivos Distribuido)
 
 ---
 
-## 1. 📦 Diseñar un sistema tipo Dropbox (Almacenamiento de Archivos Distribuido) <a name="1"></a>
+## 1. 📦 Diseñar un sistema tipo Dropbox (Almacenamiento de Archivos Distribuido)
 
 ### 🎯 Enunciado
 
@@ -60,6 +60,7 @@ Diseña **un sistema distribuido para almacenamiento y sincronización de archiv
 #### 3. **Diseño de Alto Nivel (HLD)**
 
 ##### Componentes principales:
+
 - **Client SDK** (para escritorio y móvil)
 - **API Gateway**
 - **Service Layer**
@@ -86,6 +87,7 @@ Client → API Gateway → Service Layer → Storage + Queue → Client
 #### 4. **Diseño de Base de Datos**
 
 ##### Metadata DB:
+
 - Tabla de usuarios
 - Tabla de archivos:
   - `file_id`, `user_id`, `path`, `version`, `timestamp`
@@ -93,6 +95,7 @@ Client → API Gateway → Service Layer → Storage + Queue → Client
   - `file_id`, `shared_with_user`, `access_type`
 
 ##### Blob Storage:
+
 - Particionado por usuario o hash
 - Replicación geo-distribuida
 
@@ -159,4 +162,4 @@ Client → API Gateway → Service Layer → Storage + Queue → Client
 
 ---
 
-<p align="center">Hecho con 🏗️ por <a href="https://holasoymalva.com">@holasoymalva</a></p>
+Hecho con 🏗️ por [@holasoymalva](https://holasoymalva.com)
