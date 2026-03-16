@@ -1,11 +1,10 @@
-
-# 🚀 Git Fundamentals - Mastering Version Control  
+# 🚀 Git Fundamentals - Mastering Version Control
 
 ![Git Logo](https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png)
 
-🔹 **Nivel**: Fundamental a Avanzado  
-🔹 **Tiempo estimado de estudio**: 2 - 4 horas  
-🔹 **Aplicación**: Entrevistas Técnicas / Desarrollo de Software / Colaboración en Equipos  
+🔹 **Nivel**: Fundamental a Avanzado
+🔹 **Tiempo estimado de estudio**: 2 - 4 horas
+🔹 **Aplicación**: Entrevistas Técnicas / Desarrollo de Software / Colaboración en Equipos
 
 Bienvenido a la **guía definitiva de Git**, diseñada para entrevistas técnicas y como referencia práctica para ingenieros de software. Aquí encontrarás preguntas frecuentes de entrevistas junto con respuestas detalladas y ejemplos de código.
 
@@ -13,16 +12,16 @@ Bienvenido a la **guía definitiva de Git**, diseñada para entrevistas técnica
 
 ---
 
-## 📌 **Índice**
+## 📌 Índice
 
-1. [🔹 ¿Qué es un Sistema de Control de Versiones?](#-qué-es-un-sistema-de-control-de-versiones)
-2. [🔹 ¿Qué es Git?](#-qué-es-git)
-3. [🔹 Diferencias entre Git y GitHub](#-diferencias-entre-git-y-github)
-4. [🔹 Comandos esenciales de Git](#-comandos-esenciales-de-git)
-5. [🔹 ¿Qué es un Merge Conflict y cómo solucionarlo?](#-qué-es-un-merge-conflict-y-cómo-solucionarlo)
-6. [🔹 ¿Qué es Git Stash y cómo usarlo?](#-qué-es-git-stash-y-cómo-usarlo)
-7. [🔹 Git Merge vs Git Rebase](#-git-merge-vs-git-rebase)
-8. [📚 Recursos adicionales](#-recursos-adicionales)
+1. ¿Qué es un Sistema de Control de Versiones?
+2. ¿Qué es Git?
+3. Diferencias entre Git y GitHub
+4. Comandos esenciales de Git
+5. ¿Qué es un Merge Conflict y cómo solucionarlo?
+6. ¿Qué es Git Stash y cómo usarlo?
+7. Git Merge vs Git Rebase
+8. Recursos adicionales
 
 ---
 
@@ -35,7 +34,7 @@ Un **Sistema de Control de Versiones (VCS)** es una herramienta que permite real
 
 🔥 **Ejemplo Visual:**
 
-```
+```text
 Desarrollo sin VCS:
    - archivo_v1.js
    - archivo_v2_final.js
@@ -164,7 +163,7 @@ Esto mueve la `feature-branch` sobre `main`, evitando commits de merge innecesar
 
 ---
 
-## 📚 **Recursos Adicionales**
+## 📚 Recursos adicionales
 
 📖 **Documentación Oficial**:  
 
@@ -184,11 +183,11 @@ Esto mueve la `feature-branch` sobre `main`, evitando commits de merge innecesar
 
 ---
 
-## 🎯 **Conclusión**
+## 🎯 Conclusión
 
 Git es una herramienta esencial para cualquier programador. Dominarlo no solo te ayudará en entrevistas, sino que **hará que tu flujo de trabajo sea más eficiente y profesional**. 🚀
 
 Si esta guía te ayudó, ¡no dudes en ⭐ darle un **Star** al repositorio!
 
 ---
-**💡 "El conocimiento es poder, pero compartirlo es aún más poderoso." - Anónimo**
+> 💡 "El conocimiento es poder, pero compartirlo es aún más poderoso." - Anónimo

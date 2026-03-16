@@ -48,6 +48,7 @@
 La programación estructurada se basa en procedimientos y funciones, mientras que la programación orientada a objetos (OOP) organiza el código en clases y objetos.
 
 Ejemplo en programación estructurada (JavaScript):
+
 ```js
 function calcularArea(base, altura) {
     return base * altura;
@@ -56,6 +57,7 @@ console.log(calcularArea(5, 10));
 ```
 
 Ejemplo en OOP:
+
 ```js
 class Rectangulo {
     constructor(base, altura) {
@@ -90,6 +92,7 @@ Facilita la reutilización de código, mejora la organización y escalabilidad, 
 Es una instancia de una clase que contiene propiedades y métodos.
 
 Ejemplo:
+
 ```js
 const auto = {
     marca: "Toyota",
@@ -106,6 +109,7 @@ auto.arrancar();
 Es una plantilla para crear objetos.
 
 Ejemplo:
+
 ```js
 class Auto {
     constructor(marca, modelo) {
@@ -119,7 +123,6 @@ class Auto {
 const miAuto = new Auto("Toyota", "Corolla");
 miAuto.arrancar();
 ```
-
 
 ## 7. ¿Cuál es la diferencia entre una clase y una estructura?
 
@@ -191,6 +194,7 @@ perro.hacerSonido(); // "Guau, guau!"
 ## 11. ¿Cuáles son los diferentes tipos de herencia?
 
 En la teoría de la Programación Orientada a Objetos se suelen mencionar:
+
 - **Herencia simple**: Una clase hija hereda de una sola clase padre (lo común en JavaScript).
 - **Herencia múltiple**: Una clase hereda de varias clases (no soportada de forma nativa en JavaScript).
 - **Herencia multinivel**: Cuando una clase hereda de otra, que a su vez hereda de otra, y así sucesivamente.
@@ -362,7 +366,7 @@ Es la habilidad de redefinir el comportamiento de los operadores (+, -, etc.) pa
 
 ---
 
-## 24. Diferenciar entre sobrecarga y anulación.
+## 24. Diferenciar entre sobrecarga y anulación
 
 - **Sobrecarga (Overloading)**: Mismo nombre, distinta firma (parámetros). Ocurre en tiempo de compilación en lenguajes que la soportan.  
 - **Anulación (Overriding)**: Mismo nombre, misma firma, distinta implementación en la clase hija. Ocurre en tiempo de ejecución.
@@ -455,7 +459,7 @@ En muchos lenguajes (Java, C#), es un contrato que define métodos y propiedades
 
 ---
 
-## 32. Diferenciar entre abstracción y encapsulación de datos.
+## 32. Diferenciar entre abstracción y encapsulación de datos
 
 - **Abstracción**: Mostrar solo lo necesario y ocultar la complejidad interna.  
 - **Encapsulación**: Proteger y agrupar datos y métodos para evitar acceso inadecuado o modificaciones directas.
@@ -498,6 +502,7 @@ En lenguajes con administración manual de memoria (C++), es un método que se e
 ## 37. Tipos de constructores
 
 En lenguajes como C++/Java se habla de:
+
 - **Constructor por defecto** (sin parámetros)  
 - **Constructor parametrizado**  
 - **Constructor de copia** (C++).  

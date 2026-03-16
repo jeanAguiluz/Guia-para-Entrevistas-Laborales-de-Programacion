@@ -75,7 +75,7 @@ Un **CDN (Content Delivery Network)** es una red de servidores distribuidos que 
 ## 7. ¿Qué es una base de datos relacional vs. no relacional?
 
 | Tipo | Ejemplos | Características |
-|------|----------|-----------------|
+| --- | --- | --- |
 | Relacional | MySQL, PostgreSQL | Basadas en tablas, SQL |
 | No Relacional | MongoDB, Redis | JSON, clave-valor, documentos |
 
@@ -161,6 +161,7 @@ Ejemplo: RabbitMQ, Kafka, AWS SQS.
 - [Awesome Scalability](https://github.com/binhnguyennus/awesome-scalability)
 
 🎥 **Videos recomendados**:
+
 - [Design Netflix (Hussein Nasser)](https://www.youtube.com/watch?v=UlR8dANbQWI)
 - [System Design Basics (Tech Dummies)](https://www.youtube.com/watch?v=UzLMhqg3_Wc)
 

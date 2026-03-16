@@ -2,33 +2,30 @@
 
 Este documento contiene una recopilación de preguntas frecuentes y avanzadas sobre **Node.js** que suelen aparecer en entrevistas para desarrolladores, con respuestas detalladas y ejemplos prácticos.
 
-🔹 **Cada pregunta está explicada en detalle en este mismo archivo.**  
-Puedes desplazarte hasta la sección correspondiente haciendo clic en el índice. 🚀
+🔹 **Cada pregunta está explicada en detalle en este mismo archivo.**
+Puedes recorrerlo fácilmente usando el índice. 🚀
 
 ---
 
-## 📌 **Índice**
+## 📌 Índice
 
-- [Preguntas y Respuestas](#-preguntas-y-respuestas)  
-  1. [🔹 ¿Cómo funciona el Event Loop en Node.js?](#cómo-funciona-el-event-loop-en-nodejs)  
-  2. [🔹 ¿Cuál es la diferencia entre process.nextTick() y setImmediate()?](#cuál-es-la-diferencia-entre-processnexttick-y-setimmediate)  
-  3. [🔹 ¿Qué es el clustering en Node.js y cuándo usarlo?](#qué-es-el-clustering-en-nodejs-y-cuándo-usarlo)  
-  4. [🔹 ¿Cómo gestionar memoria y detectar memory leaks?](#cómo-gestionar-memoria-y-detectar-memory-leaks)  
-  5. [🔹 ¿Qué es el event-driven non-blocking I/O?](#qué-es-el-event-driven-non-blocking-io)  
-  6. [🔹 ¿Qué diferencias hay entre streams y buffers?](#qué-diferencias-hay-entre-streams-y-buffers)  
-  7. [🔹 ¿Cómo manejar errores correctamente (callback, promesas y async/await)?](#cómo-manejar-errores-correctamente)  
-  8. [🔹 ¿Qué son middlewares y cómo funcionan en frameworks como Express?](#qué-son-middlewares-y-cómo-funcionan-en-frameworks-como-express)  
-  9. [🔹 ¿Qué es el patrón de diseño Factory y cómo se usa en Node.js?](#qué-es-el-patrón-de-diseño-factory-y-cómo-se-usa-en-nodejs)  
-  10. [🔹 ¿Qué es una arquitectura de microservicios y cómo aplicarla en Node.js?](#qué-es-una-arquitectura-de-microservicios-y-cómo-aplicarla-en-nodejs)  
-  11. [🔹 Estrategias para manejar autenticación y autorización](#estrategias-para-manejar-autenticación-y-autorización)  
-  12. [🔹 ¿Cómo optimizar el rendimiento de una API Node.js?](#cómo-optimizar-el-rendimiento-de-una-api-nodejs)  
-  13. [🔹 ¿Qué es la política Same-Origin y CORS?](#qué-es-la-política-same-origin-y-cors)  
-  14. [🔹 ¿Cómo implementar caching efectivo en Node.js?](#cómo-implementar-caching-efectivo-en-nodejs)  
-  15. [🔹 ¿Cómo hacer debugging avanzado en Node.js?](#cómo-hacer-debugging-avanzado-en-nodejs)  
-  16. [🔹 ¿Qué es el Garbage Collector en Node.js y cómo monitorearlo?](#qué-es-el-garbage-collector-en-nodejs-y-cómo-monitorearlo)  
-  17. [🔹 ¿Qué herramientas existen para profiling y performance testing?](#qué-herramientas-existen-para-profiling-y-performance-testing)
-
-- [📚 Recursos adicionales](#recursos-adicionales)
+1. ¿Cómo funciona el Event Loop en Node.js?
+2. ¿Cuál es la diferencia entre `process.nextTick()` y `setImmediate()`?
+3. ¿Qué es el clustering en Node.js y cuándo usarlo?
+4. ¿Cómo gestionar memoria y detectar memory leaks?
+5. ¿Qué es el event-driven non-blocking I/O?
+6. ¿Qué diferencias hay entre streams y buffers?
+7. ¿Cómo manejar errores correctamente (callback, promesas y `async/await`)?
+8. ¿Qué son middlewares y cómo funcionan en frameworks como Express?
+9. ¿Qué es el patrón de diseño Factory y cómo se usa en Node.js?
+10. ¿Qué es una arquitectura de microservicios y cómo aplicarla en Node.js?
+11. Estrategias para manejar autenticación y autorización
+12. ¿Cómo optimizar el rendimiento de una API Node.js?
+13. ¿Qué es la política Same-Origin y CORS?
+14. ¿Cómo implementar caching efectivo en Node.js?
+15. ¿Cómo hacer debugging avanzado en Node.js?
+16. ¿Qué es el Garbage Collector en Node.js y cómo monitorearlo?
+17. ¿Qué herramientas existen para profiling y performance testing?
 
 ---
 
@@ -47,11 +44,10 @@ process.nextTick(() => console.log("Next Tick"));
 ```
 
 Salida típica:
-```
+
 Next Tick
 Timer
 Immediate
-```
 
 ### 🔹 ¿Cuál es la diferencia entre process.nextTick() y setImmediate()?
 
@@ -91,7 +87,7 @@ Es un modelo donde las operaciones de entrada/salida (I/O) no bloquean el hilo p
 ### 🔹 ¿Qué diferencias hay entre streams y buffers?
 
 | Concepto | Streams | Buffers |
-|----------|---------|---------|
+| --- | --- | --- |
 | Propósito | Manejar datos en movimiento | Almacenar datos binarios |
 | Ejemplo | Lectura de archivos grandes | Contenido de archivos pequeños |
 
@@ -190,16 +186,20 @@ Monitoreo:
 - **Profiling**: `clinic.js`, `0x`, Chrome DevTools.
 - **Testing**: Artillery, k6, Autocannon.
 
+---
 
 ## 📚 Recursos adicionales
 
-📖 **Documentación Oficial**:  
+📖 **Documentación Oficial**:
+
 - [Node.js Docs](https://nodejs.org/en/docs)  
 
-🎥 **Videos recomendados**:  
+🎥 **Videos recomendados**:
+
 - [What the heck is the event loop anyway? - Philip Roberts](https://www.youtube.com/watch?v=8aGhZQkoFbQ)  
 - [Debugging Memory Leaks in Node.js](https://www.youtube.com/watch?v=8C4ekJj3UjY)
 
-🔗 **Cursos recomendados**:  
+🔗 **Cursos recomendados**:
+
 - [Node.js - The Complete Guide (Udemy)](https://www.udemy.com/course/nodejs-the-complete-guide/)  
 - [Advanced Node.js (Pluralsight)](https://www.pluralsight.com/courses/nodejs-advanced)

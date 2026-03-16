@@ -4,18 +4,18 @@ Bienvenido a la sección de **Pruebas Técnicas** enfocada en resolver problemas
 
 ---
 
-## 🎯 ¿Qué vas a encontrar aquí?
+## 🎯 Qué vas a encontrar aquí
 
 - Enunciados claros y concisos.
 - Restricciones y objetivos definidos.
 - Soluciones explicadas paso a paso.
 - Código de ejemplo en JavaScript (puedes adaptar a tu lenguaje favorito).
 
-💡 **Recomendación**: Intenta resolver cada desafío por tu cuenta antes de mirar la solución.
+💡 **Recomendación**: intenta resolver cada desafío por tu cuenta antes de mirar la solución.
 
 ---
 
-## 📌 Índice de Desafíos
+## 📌 Índice de desafíos
 
 1. ✅ Subcadena más larga sin caracteres repetidos
 2. ✅ FizzBuzz con condiciones personalizadas
@@ -30,16 +30,16 @@ Bienvenido a la sección de **Pruebas Técnicas** enfocada en resolver problemas
 
 ## 1. Subcadena más larga sin caracteres repetidos
 
-**🔹 Enunciado**
+### 1.1 Enunciado
+
 Dado un string, encuentra la longitud de la subcadena más larga que no contiene caracteres repetidos.
 
-**Ejemplo**:
-```js
-Entrada: "abcabcbb"
-Salida: 3 // "abc"
-```
+### 1.2 Ejemplo
 
-**🔹 Explicación paso a paso**
+- **Entrada**: `"abcabcbb"`
+- **Salida**: `3` (`"abc"`)
+
+### 1.3 Explicación paso a paso
 
 1. Usa un puntero izquierdo y derecho para delimitar la ventana.
 2. Utiliza un `Set` para registrar caracteres únicos en la ventana.
@@ -50,154 +50,141 @@ Salida: 3 // "abc"
 
 ## 2. FizzBuzz con condiciones personalizadas
 
-**🔹 Enunciado**
+### 2.1 Enunciado
 
 Imprime los números del 1 al 100. Para múltiplos de 3, imprime "Fizz", para múltiplos de 5 "Buzz", y para ambos "FizzBuzz".
 
-**Salida esperada (fragmento)**:
+### 2.2 Salida esperada
 
-```
-1, 2, Fizz, 4, Buzz, Fizz, 7, ...
-```
+`1, 2, Fizz, 4, Buzz, Fizz, 7, ...`
 
-**🔹 Explicación paso a paso**
+### 2.3 Explicación paso a paso
 
 1. Usa un bucle de 1 a 100.
-2. Condicionales:
+2. Evalúa las condiciones en este orden:
 
-   * `n % 3 === 0 && n % 5 === 0` → "FizzBuzz"
-   * `n % 3 === 0` → "Fizz"
-   * `n % 5 === 0` → "Buzz"
-   * else → número
+   - `n % 3 === 0 && n % 5 === 0` → "FizzBuzz"
+   - `n % 3 === 0` → "Fizz"
+   - `n % 5 === 0` → "Buzz"
+   - En cualquier otro caso → número
 
 ---
 
 ## 3. Verificar si una cadena es palíndromo
 
-**🔹 Enunciado**
+### 3.1 Enunciado
 
 Escribe una función que determine si una palabra o frase es un palíndromo (se lee igual al derecho que al revés).
 
-**Ejemplo**:
+### 3.2 Ejemplo
 
-```js
-Entrada: "anita lava la tina"
-Salida: true
-```
+- **Entrada**: `"anita lava la tina"`
+- **Salida**: `true`
 
-**🔹 Explicación paso a paso**
+### 3.3 Explicación paso a paso
 
-1. Elimina espacios y convierte a minúsculas.
-2. Compara la cadena con su reversa.
+1. Elimina espacios y convierte el texto a minúsculas.
+2. Compara la cadena con su versión invertida.
 
 ---
 
 ## 4. Determinar si dos strings son anagramas
 
-**🔹 Enunciado**
+### 4.1 Enunciado
 
-Dado dos strings, determinar si son anagramas (mismos caracteres, diferente orden).
+Dados dos strings, determina si son anagramas, es decir, si tienen los mismos caracteres en distinto orden.
 
-**Ejemplo**:
+### 4.2 Ejemplo
 
-```js
-Entrada: "listen", "silent"
-Salida: true
-```
+- **Entrada**: `"listen", "silent"`
+- **Salida**: `true`
 
-**🔹 Explicación paso a paso**
+### 4.3 Explicación paso a paso
 
-1. Quita espacios y ordena ambas cadenas.
-2. Compara si son idénticas.
+1. Quita espacios y normaliza ambas cadenas.
+2. Ordena sus caracteres.
+3. Compara si el resultado final es idéntico.
 
 ---
 
 ## 5. Encontrar el número que se repite una sola vez
 
-**🔹 Enunciado**
+### 5.1 Enunciado
 
 Dado un array donde todos los elementos se repiten dos veces excepto uno, encuentra ese número.
 
-**Ejemplo**:
+### 5.2 Ejemplo
 
-```js
-Entrada: [4, 1, 2, 1, 2]
-Salida: 4
-```
+- **Entrada**: `[4, 1, 2, 1, 2]`
+- **Salida**: `4`
 
-**🔹 Explicación paso a paso**
+### 5.3 Explicación paso a paso
 
-1. Usa XOR (`^`) para cancelar duplicados.
-2. Resultado final será el número único.
+1. Usa XOR (`^`) para cancelar los números duplicados.
+2. El valor restante será el número único.
 
 ---
 
 ## 6. Validar paréntesis balanceados
 
-**🔹 Enunciado**
+### 6.1 Enunciado
 
 Verifica si una cadena de paréntesis está correctamente balanceada.
 
-**Ejemplo**:
+### 6.2 Ejemplo
 
-```js
-Entrada: "({[]})"
-Salida: true
-```
+- **Entrada**: `"({[]})"`
+- **Salida**: `true`
 
-**🔹 Explicación paso a paso**
+### 6.3 Explicación paso a paso
 
 1. Usa una pila.
-2. Por cada apertura, apila.
-3. Por cada cierre, compara con el tope.
+2. Por cada apertura, agrega el símbolo a la pila.
+3. Por cada cierre, compara con el elemento del tope.
 
 ---
 
 ## 7. Búsqueda binaria en array ordenado
 
-**🔹 Enunciado**
+### 7.1 Enunciado
 
-Dado un array ordenado y un número objetivo, devuelve su índice o -1 si no existe.
+Dado un array ordenado y un número objetivo, devuelve su índice o `-1` si no existe.
 
-**Ejemplo**:
+### 7.2 Ejemplo
 
-```js
-Entrada: [1, 3, 5, 7, 9], objetivo: 5
-Salida: 2
-```
+- **Entrada**: `[1, 3, 5, 7, 9]`, objetivo `5`
+- **Salida**: `2`
 
-**🔹 Explicación paso a paso**
+### 7.3 Explicación paso a paso
 
 1. Usa punteros `inicio` y `fin`.
-2. Calcula punto medio.
+2. Calcula el punto medio.
 3. Reajusta el rango según el valor buscado.
 
 ---
 
 ## 8. Factorial recursivo vs iterativo
 
-**🔹 Enunciado**
+### 8.1 Enunciado
 
-Implementa una función que calcule el factorial de un número de forma:
+Implementa una función que calcule el factorial de un número de estas dos formas:
 
-* Recursiva
-* Iterativa
+- Recursiva
+- Iterativa
 
-**Ejemplo**:
+### 8.2 Ejemplo
 
-```js
-Entrada: 5
-Salida: 120
-```
+- **Entrada**: `5`
+- **Salida**: `120`
 
-**🔹 Explicación paso a paso**
+### 8.3 Explicación paso a paso
 
-* Recursivo: `n * factorial(n - 1)`
-* Iterativo: usar bucle acumulativo
+- Recursivo: `n * factorial(n - 1)`
+- Iterativo: usar un bucle acumulativo
 
 ---
 
-## 📌 ¿Cómo practicar?
+## 📌 Cómo practicar
 
 1. Elige un problema del índice.
 2. Lee el enunciado sin mirar la solución.
@@ -209,20 +196,18 @@ Salida: 120
 
 ---
 
-## 🚀 Nivel de Dificultad (sugerido)
+## 🚀 Nivel de dificultad sugerido
 
-| Desafío | Nivel         |
-| ------- | ------------- |
-| 1-5     | 🟢 Básico     |
-| 6-8     | 🟡 Intermedio |
+- Desafíos 1 a 5: 🟢 Básico
+- Desafíos 6 a 8: 🟡 Intermedio
 
 ---
 
 ## 🛠️ Próximamente
 
-* Nuevos ejercicios por categorías: recursión, sorting, grafos, etc.
-* Soluciones en múltiples lenguajes.
-* Simulador de entrevistas técnicas.
+- Nuevos ejercicios por categorías: recursión, sorting, grafos, etc.
+- Soluciones en múltiples lenguajes.
+- Simulador de entrevistas técnicas.
 
 ---
 

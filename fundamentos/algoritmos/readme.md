@@ -2,7 +2,7 @@
 
 Este documento recopila preguntas comunes sobre **algoritmos y estructuras de datos** que suelen aparecer en entrevistas técnicas. Incluye explicaciones, ejemplos prácticos y conceptos clave para ayudarte a resolver problemas con eficiencia y claridad.
 
-🔹 **Todas las preguntas están respondidas directamente en este archivo.**  
+🔹 **Todas las preguntas están respondidas directamente en este archivo.**
 Puedes navegar usando el índice para ir a las secciones que más te interesen.
 
 ---
@@ -23,7 +23,7 @@ Puedes navegar usando el índice para ir a las secciones que más te interesen.
 
 ### Temario de Algoritmos
 
-1 ¿Qué es un algoritmo?
+1. ¿Qué es un algoritmo?
 2. ¿Qué es la notación Big O y por qué es importante?
 3. ¿Qué es la recursión?
 4. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?
@@ -129,13 +129,13 @@ Conjunto de nodos conectados por aristas. Puede ser dirigido o no, ponderado o n
 
 ## Algoritmos
 
-### 10. ¿Qué es un algoritmo?
+### 1. ¿Qué es un algoritmo?
 
 Es una secuencia de pasos definidos para resolver un problema. Debe ser claro, finito y ejecutable.
 
 ---
 
-### 11. ¿Qué es la notación Big O y por qué es importante?
+### 2. ¿Qué es la notación Big O y por qué es importante?
 
 Describe la complejidad temporal o espacial de un algoritmo en función del tamaño de entrada.
 
@@ -148,7 +148,7 @@ Describe la complejidad temporal o espacial de un algoritmo en función del tama
 
 ---
 
-### 12. ¿Qué es la recursión?
+### 3. ¿Qué es la recursión?
 
 Es cuando una función se llama a sí misma para resolver subproblemas.
 
@@ -161,14 +161,14 @@ function factorial(n) {
 
 ---
 
-### 13. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?
+### 4. ¿Cuál es la diferencia entre búsqueda lineal y búsqueda binaria?
 
-* **Lineal**: Recorre uno a uno los elementos (O(n)).
-* **Binaria**: Divide el array ordenado a la mitad en cada paso (O(log n)).
+- **Lineal**: Recorre uno a uno los elementos (O(n)).
+- **Binaria**: Divide el array ordenado a la mitad en cada paso (O(log n)).
 
 ---
 
-### 14. ¿Qué es ordenamiento por burbuja (bubble sort)?
+### 5. ¿Qué es ordenamiento por burbuja (bubble sort)?
 
 Algoritmo simple que compara e intercambia elementos adyacentes repetidamente.
 
@@ -184,37 +184,37 @@ function bubbleSort(arr) {
 
 ---
 
-### 15. ¿Qué es quicksort y cómo funciona?
+### 6. ¿Qué es quicksort y cómo funciona?
 
 Algoritmo de ordenamiento basado en "divide y vencerás". Usa un pivote y separa elementos menores y mayores.
 
 ---
 
-### 16. ¿Qué es el algoritmo de Dijkstra?
+### 7. ¿Qué es el algoritmo de Dijkstra?
 
 Calcula el camino más corto desde un nodo a todos los demás en un grafo ponderado sin ciclos negativos.
 
 ---
 
-### 17. ¿Qué es el algoritmo de backtracking?
+### 8. ¿Qué es el algoritmo de backtracking?
 
 Prueba soluciones recursivamente y retrocede si no cumplen. Ejemplo: Sudoku, n-reinas.
 
 ---
 
-### 18. ¿Qué es programación dinámica?
+### 9. ¿Qué es programación dinámica?
 
 Técnica que guarda resultados de subproblemas para no repetir cálculos. Ejemplo: Fibonacci con memoización.
 
 ---
 
-### 19. ¿Qué es una búsqueda en anchura (BFS)?
+### 10. ¿Qué es una búsqueda en anchura (BFS)?
 
 Explora los nodos nivel por nivel. Se implementa con una cola.
 
 ---
 
-### 20. ¿Qué es una búsqueda en profundidad (DFS)?
+### 11. ¿Qué es una búsqueda en profundidad (DFS)?
 
 Explora lo más profundo posible antes de retroceder. Se implementa con una pila o recursión.
 
@@ -222,16 +222,16 @@ Explora lo más profundo posible antes de retroceder. Se implementa con una pila
 
 ## 📚 Recursos Adicionales
 
-* [Visualgo.net (visualizaciones)](https://visualgo.net/)
-* [Leetcode](https://leetcode.com/)
-* [GeeksforGeeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
-* [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
-* [CS50 - Harvard](https://cs50.harvard.edu/)
+- [Visualgo.net (visualizaciones)](https://visualgo.net/)
+- [Leetcode](https://leetcode.com/)
+- [GeeksforGeeks - Data Structures](https://www.geeksforgeeks.org/data-structures/)
+- [Big O Cheat Sheet](https://www.bigocheatsheet.com/)
+- [CS50 - Harvard](https://cs50.harvard.edu/)
 
 🎥 **Videos recomendados**:
 
-* [Sorting Algorithms Animation (Timo Bingmann)](https://www.youtube.com/watch?v=ZZuD6iUe3Pc)
-* [Dynamic Programming - FreeCodeCamp](https://www.youtube.com/watch?v=oBt53YbR9Kk)
+- [Sorting Algorithms Animation (Timo Bingmann)](https://www.youtube.com/watch?v=ZZuD6iUe3Pc)
+- [Dynamic Programming - FreeCodeCamp](https://www.youtube.com/watch?v=oBt53YbR9Kk)
 
 ---
 

@@ -1,112 +1,111 @@
-# 📖 Guía para Entrevistas Laborales de Programación  
+# 📖 Guía para Entrevistas Laborales de Programación
 
 ![readme-title](./readme-assets/entrevista.png)
 
-Este repositorio es un recurso abierto para ayudarte a prepararte para entrevistas técnicas en programación. Aquí encontrarás teoría, ejemplos de código, pruebas técnicas, desafíos prácticos y simulacros de entrevistas.
+Este repositorio es un recurso abierto para ayudarte a prepararte para entrevistas técnicas de programación. Aquí encontrarás teoría, ejemplos de código, pruebas técnicas, desafíos prácticos y simulacros de entrevistas.
 
-🚀 **Objetivo**: Brindar una guía completa con preguntas comunes, resolución de problemas y simulacros para mejorar tus habilidades.
+**Objetivo:** brindar una guía completa con preguntas comunes, resolución de problemas y simulacros para mejorar tus habilidades.
 
-📌 **Índice**
+## Índice
 
-1. [Fundamentos](#%EF%B8%8F-fundamentos)
-2. [Stacks Tecnológicos](#-stacks-tecnológicos)
-3. [Pruebas Técnicas](#-pruebas-técnicas)
-4. [Simulacros de Entrevistas](#-simulacros-de-entrevistas)
-5. [Cómo Contribuir](#-cómo-contribuir)
-
----
-
-## 🏗️ Fundamentos
-
-Esta sección cubre conceptos esenciales en programación y herramientas clave.  
-Cada tema contiene preguntas comunes, ejemplos de código y recursos adicionales.
-
-📌 **Temas Incluidos**:
-
-- **Git** → [Preguntas Frecuentes](fundamentos/git/readme.md)  
-- **HTML & CSS** → [Preguntas Frecuentes](fundamentos/html/readme.md)
-- **JavaScript** → [Preguntas Frecuentes](fundamentos/javascript/readme.md)
-- **POO (Programación Orientada a Objetos)** → [Preguntas Frecuentes](fundamentos/poo/readme.md)
-- **Algoritmos y Estructuras de Datos** → [Preguntas Frecuentes](fundamentos/algoritmos/readme.md)
-- **Diseño de Sistemas** → [Preguntas Frecuentes](fundamentos/systems-design/readme.md)
+1. Fundamentos
+2. Stacks tecnológicos
+3. Pruebas técnicas
+4. Simulacros de entrevistas
+5. Cómo contribuir
 
 ---
 
-## 🚀 Stacks Tecnológicos
+## Fundamentos
+
+Esta sección cubre conceptos esenciales de programación y herramientas clave. Cada tema contiene preguntas frecuentes, ejemplos de código y recursos adicionales.
+
+- **Git**: [Preguntas frecuentes](fundamentos/git/readme.md)
+- **HTML y CSS**: [Preguntas frecuentes](fundamentos/html/readme.md)
+- **JavaScript**: [Preguntas frecuentes](fundamentos/javascript/readme.md)
+- **POO (Programación Orientada a Objetos)**: [Preguntas frecuentes](fundamentos/poo/readme.md)
+- **Algoritmos y estructuras de datos**: [Preguntas frecuentes](fundamentos/algoritmos/readme.md)
+- **Diseño de sistemas**: [Preguntas frecuentes](fundamentos/systems-design/readme.md)
+
+---
+
+## Stacks tecnológicos
 
 Exploramos preguntas y desafíos específicos para distintos stacks.
 
-📌 **Stacks Incluidos**:
+- **Node.js**: [Preguntas frecuentes](stacks/node/readme.md)
+- **React**: [Preguntas frecuentes](stacks/react/readme.md) _(En desarrollo)_
 
-- [Node.js](stacks/node/readme.md)
-
-Cada stack tiene preguntas técnicas y ejercicios aplicados a entrevistas reales.
+Cada stack reúne preguntas técnicas y ejercicios aplicados a entrevistas reales.
 
 ---
 
-## 🧠 Pruebas Técnicas
+## Pruebas técnicas
 
-La clave para superar entrevistas técnicas es la práctica constante. Aquí encontrarás desafíos y pruebas técnicas.
+La clave para superar entrevistas técnicas es la práctica constante. Aquí encontrarás desafíos y ejercicios para entrenar lógica, diseño y UI.
 
-📌 **Tipos de Pruebas**:
+- **Lógica, algoritmos y estructuras de datos**: [Ejercicios](pruebas-tecnicas/desafios/logica/readme.md) _(En desarrollo)_
+- **Diseño de sistemas**: [Ejercicios](pruebas-tecnicas/desafios/systems-design/readme.md) _(En desarrollo)_
+- **Desarrollo frontend UI**: [Ejercicios](pruebas-tecnicas/desafios/frontend-ui/readme.md) _(En desarrollo)_
 
-- **Lógica, Algoritmos y Estructuras de Datos** → [Ejercicios](pruebas-tecnicas/desafios/logica/readme.md) ( ⚠️ En desarrollo ⚠️ )
-- **Diseño de Sistemas** → [Ejercicios](pruebas-tecnicas/desafios/systems-design/readme.md) ( ⚠️ En desarrollo ⚠️ )
-- **Desarrollo Frontend UI** → [Ejercicios](pruebas-tecnicas/desafios/frontend-ui/readme.md) ( ⚠️ En desarrollo ⚠️ )
-
-Ejemplo de un desafío:
+### Ejemplo de desafío
 
 ```js
 // Dado un string, encuentra la subcadena más larga sin caracteres repetidos
 const longestSubstring = (s) => {
-  let seen = new Set(), maxLen = 0, left = 0;
+  let seen = new Set();
+  let maxLen = 0;
+  let left = 0;
+
   for (let right = 0; right < s.length; right++) {
     while (seen.has(s[right])) {
       seen.delete(s[left]);
       left++;
     }
+
     seen.add(s[right]);
     maxLen = Math.max(maxLen, right - left + 1);
   }
+
   return maxLen;
 };
+
 console.log(longestSubstring("abcabcbb")); // Output: 3
 ```
 
 ---
 
-## 🎭 Simulacros de Entrevistas
+## Simulacros de entrevistas
 
-Prueba tus habilidades con entrevistas simuladas y escenarios reales.
+Pon a prueba tus habilidades con entrevistas simuladas y escenarios reales.
 
-📌 **Tipos de Simulacros**:
-
-1. **Entrevistas de Algoritmos y Lógica**
-2. **Entrevistas de Código en Varios Lenguajes**
-3. **Casos Prácticos de Desarrollo**
+1. Entrevistas de algoritmos y lógica
+2. Entrevistas de código en varios lenguajes
+3. Casos prácticos de desarrollo
 
 ---
 
-## 🤝 Cómo Contribuir
+## Cómo contribuir
 
-📌 Si deseas contribuir, sigue estos pasos:
+Si deseas contribuir, sigue estos pasos:
 
-1. **Clona el repositorio**  
+1. Clona el repositorio.
 
    ```sh
    git clone https://github.com/holasoymalva/Guia-para-Entrevistas-Laborales-de-Programacion.git
    ```
 
-2. **Crea una nueva rama**  
+2. Crea una nueva rama.
 
    ```sh
    git checkout -b mi-contribucion
    ```
 
-3. **Realiza cambios y sube tus mejoras**
-4. **Haz un Pull Request**
+3. Realiza tus cambios y sube tus mejoras.
+4. Abre un Pull Request.
 
-**¡Gracias por tu apoyo!** 💙
+Gracias por tu apoyo.
 
 ---
+
 Hecho con ❤️ por [@holasoymalva](https://holasoymalva.com)

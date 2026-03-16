@@ -25,7 +25,7 @@ Diseña **un sistema distribuido para almacenamiento y sincronización de archiv
 - Tener acceso offline y actualizaciones en segundo plano.
 - Manejar versiones de archivos.
 
-**Requisitos no funcionales:**
+#### Requisitos no funcionales
 
 - Escalabilidad global.
 - Alta disponibilidad.
@@ -59,7 +59,7 @@ Diseña **un sistema distribuido para almacenamiento y sincronización de archiv
 
 #### 3. **Diseño de Alto Nivel (HLD)**
 
-##### Componentes principales:
+##### Componentes principales
 
 - **Client SDK** (para escritorio y móvil)
 - **API Gateway**
@@ -76,17 +76,12 @@ Diseña **un sistema distribuido para almacenamiento y sincronización de archiv
 - **CDN** para archivos públicos
 
 📌 **Diagrama sugerido** (dibujar fuera):
-```
-
-Client → API Gateway → Service Layer → Storage + Queue → Client
-
-```
 
 ---
 
 #### 4. **Diseño de Base de Datos**
 
-##### Metadata DB:
+##### Metadata DB
 
 - Tabla de usuarios
 - Tabla de archivos:
@@ -94,7 +89,7 @@ Client → API Gateway → Service Layer → Storage + Queue → Client
 - Tabla de permisos:
   - `file_id`, `shared_with_user`, `access_type`
 
-##### Blob Storage:
+##### Blob Storage
 
 - Particionado por usuario o hash
 - Replicación geo-distribuida
